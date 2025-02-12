@@ -102,14 +102,14 @@ function Circle() {
                     <Typography variant="body2" mb={2} sx={{display: "flex",justifyContent: "flex-end"}}>最終更新: {item.lastUpdate}</Typography>
                     <Box>
                     <Swiper
-                        spaceBetween={0}
+                        spaceBetween={1}
                         slidesPerView={4}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                         >
                         {item.tags.map((tag:string, index:number) => (
                             <SwiperSlide key={index}>
-                                <Chip size="small" label={tag} sx={{bgcolor: 'primary.light'}}/>
+                                <Chip size="small" label={tag} sx={{bgcolor: 'primary.light', width:'100%'}}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>
