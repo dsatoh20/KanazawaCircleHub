@@ -26,14 +26,13 @@ interface MemberProps {
         };
         foundingYear: string;
 };
-export default function Circle() {
+function Circle() {
     const searchParams = useSearchParams();
-    const item = data.find(item => item.circleName == searchParams.get("circleName"));
-
+    const item:Circle | undefined = data.find(item => item.circleName == searchParams.get("circleName"));
     if (!item) {
-        // circleNameが存在しない場合、トップページへリディレクトする
-        return redirect("/")
-    }
+        return redirect('/');
+    };
+
 
     function SocialLinks(links: LinksProps) {
         return (
@@ -44,7 +43,7 @@ export default function Circle() {
             <li>Website: {links.Website}</li>
         </ul>
         )
-    }
+    };
     function MemberComposition(composition: MemberProps) {
         return (<>
             <Typography variant="body2">総勢{composition.totalMembers}名</Typography>
@@ -93,64 +92,72 @@ export default function Circle() {
                 </Box>
             </Stack>
         </>)
-    }
+    };
 
     return (
         <RootLayout>
-            <MenuAppBar title={item.circleName} />
-            <Suspense fallback={<div>Loading...</div>}>
-            <Container maxWidth="sm" sx={{ marginTop: 2, marginBottom: 2 }}>
-                <Typography variant="body2" mb={2} sx={{display: "flex",justifyContent: "flex-end"}}>最終更新: {item.lastUpdate}</Typography>
-                <Box>
-                <Swiper
-                    spaceBetween={0}
-                    slidesPerView={4}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    >
-                    {item.tags.map((tag:string, index:number) => (
-                        <SwiperSlide key={index}>
-                            <Chip size="small" label={tag} sx={{bgcolor: 'primary.light'}}/>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-                </Box>
-                <Typography variant="h6" mt={1}>基本情報</Typography>
-                <List>
+                {item && <>
+                <MenuAppBar title={item.circleName} />
+                <Container maxWidth="sm" sx={{ marginTop: 2, marginBottom: 2 }}>
+                    <Typography variant="body2" mb={2} sx={{display: "flex",justifyContent: "flex-end"}}>最終更新: {item.lastUpdate}</Typography>
+                    <Box>
+                    <Swiper
+                        spaceBetween={0}
+                        slidesPerView={4}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        >
+                        {item.tags.map((tag:string, index:number) => (
+                            <SwiperSlide key={index}>
+                                <Chip size="small" label={tag} sx={{bgcolor: 'primary.light'}}/>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                    </Box>
+                    <Typography variant="h6" mt={1}>基本情報</Typography>
+                    <List>
+                        <ListItem>
+                            <ListItemText primary="結成年" secondary={item.memberComposition.foundingYear}/>
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="所属" secondary={item.affiliation}/>
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="メンバー構成" secondary={MemberComposition(item.memberComposition)}/>
+                        </ListItem>
+                        
+                    </List>
+                    <Typography variant="h6" mt={1}>活動内容</Typography>
+                    <List>
+                        <ListItem>
+                            <ListItemText primary="概要" secondary={item.activityDetails.summary}/>
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="活動場所" secondary={item.activityDetails.location}/>
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="活動頻度" secondary={item.activityDetails.frequency}/>
+                        </ListItem>
+                    </List>
+                    <Typography variant="h6" mt={1}>新歓日程</Typography>
                     <ListItem>
-                        <ListItemText primary="結成年" secondary={item.memberComposition.foundingYear}/>
+                        <ListItemText primary="" secondary={item.recruitmentInfo.welcomeSchedule}/>
                     </ListItem>
+                    <Typography variant="h6" mt={1}>連絡先</Typography>
                     <ListItem>
-                        <ListItemText primary="所属" secondary={item.affiliation}/>
+                        <ListItemText primary="" secondary={SocialLinks(item.externalLinks)}/>
                     </ListItem>
-                    <ListItem>
-                        <ListItemText primary="メンバー構成" secondary={MemberComposition(item.memberComposition)}/>
-                    </ListItem>
-                    
-                </List>
-                <Typography variant="h6" mt={1}>活動内容</Typography>
-                <List>
-                    <ListItem>
-                        <ListItemText primary="概要" secondary={item.activityDetails.summary}/>
-                    </ListItem>
-                    <ListItem>
-                        <ListItemText primary="活動場所" secondary={item.activityDetails.location}/>
-                    </ListItem>
-                    <ListItem>
-                        <ListItemText primary="活動頻度" secondary={item.activityDetails.frequency}/>
-                    </ListItem>
-                </List>
-                <Typography variant="h6" mt={1}>新歓日程</Typography>
-                <ListItem>
-                    <ListItemText primary="" secondary={item.recruitmentInfo.welcomeSchedule}/>
-                </ListItem>
-                <Typography variant="h6" mt={1}>連絡先</Typography>
-                <ListItem>
-                    <ListItemText primary="" secondary={SocialLinks(item.externalLinks)}/>
-                </ListItem>
-            </Container>
-            </Suspense>
+                </Container>
+                </>}
             <BasicBreadcrumbs />
         </RootLayout>
+    );
+};
+
+export default function CirclePage() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <Circle />
+        </Suspense>
     )
 }
