@@ -46,7 +46,7 @@ export default function Circle() {
         )
     }
     function MemberComposition(composition: MemberProps) {
-        return (<Suspense fallback={<div>Loading...</div>}>
+        return (<>
             <Typography variant="body2">総勢{composition.totalMembers}名</Typography>
             <Stack spacing={2}>
                 <Box>
@@ -92,12 +92,13 @@ export default function Circle() {
                     </Table>
                 </Box>
             </Stack>
-        </Suspense>)
+        </>)
     }
 
     return (
         <RootLayout>
             <MenuAppBar title={item.circleName} />
+            <Suspense fallback={<div>Loading...</div>}>
             <Container maxWidth="sm" sx={{ marginTop: 2, marginBottom: 2 }}>
                 <Typography variant="body2" mb={2} sx={{display: "flex",justifyContent: "flex-end"}}>最終更新: {item.lastUpdate}</Typography>
                 <Box>
@@ -148,6 +149,7 @@ export default function Circle() {
                     <ListItemText primary="" secondary={SocialLinks(item.externalLinks)}/>
                 </ListItem>
             </Container>
+            </Suspense>
             <BasicBreadcrumbs />
         </RootLayout>
     )
