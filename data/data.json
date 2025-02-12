@@ -1,0 +1,342 @@
+[
+    {
+        "circleName": "金沢スナップ",
+        "profileImage": "https://images.unsplash.com/photo-1515519128511-cbd81859fa91?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "全学公認",
+        "memberComposition": {
+            "totalMembers": "50",
+            "gradeLevels": {
+                "1st": "25%",
+                "2nd": "25%",
+                "3rd": "20%",
+                "4th": "20%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "40%",
+                "Female": "60%"
+            },
+            "foundingYear": "2010"
+        },
+        "externalLinks": {
+            "Instagram": "@kanazawasnap"
+        },
+        "tags": ["中途歓迎", "文化系", "公認", "兼サー可"],
+        "activityDetails": {
+            "summary": "カメラを通じて世界を切り取る魔法。金沢の美しい風景やイベントを撮影し、あなたの視点で物語を語ろう！",
+            "location": "芸術館、公園",
+            "frequency": "週2回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第一週"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢ランナーズクラブ",
+        "profileImage": "https://images.unsplash.com/photo-1475274110913-480c45d0e873?q=80&w=1181&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "理工学域公認",
+        "memberComposition": {
+            "totalMembers": "80",
+            "gradeLevels": {
+                "1st": "35%",
+                "2nd": "25%",
+                "3rd": "15%",
+                "4th": "15%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "50%",
+                "Female": "50%"
+            },
+            "foundingYear": "2015"
+        },
+        "externalLinks": {
+            "LINE": "@kanazawarun"
+        },
+        "tags": ["体育会系", "インカレ", "公認"],
+        "activityDetails": {
+            "summary": "青春を駆け抜ける！フレンドリーなランニングクラブで健康も友情も手に入れよう。初心者からマラソンランナーまで大歓迎。",
+            "location": "金沢市内の公園と運動場",
+            "frequency": "週3回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第二週"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢アートラボ",
+        "profileImage": "https://images.unsplash.com/photo-1529154166925-574a0236a4f4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "人間社会学域公認",
+        "memberComposition": {
+            "totalMembers": "40",
+            "gradeLevels": {
+                "1st": "30%",
+                "2nd": "25%",
+                "3rd": "20%",
+                "4th": "15%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "30%",
+                "Female": "70%"
+            },
+            "foundingYear": "2008"
+        },
+        "externalLinks": {
+            "Website": "www.kanazawaartlab.com"
+        },
+        "tags": ["文化系", "公認"],
+        "activityDetails": {
+            "summary": "アートで感じる、新しい視点。多彩なジャンルのアートを探求し、自分だけの作品を創造しよう。",
+            "location": "美術学部、地域のギャラリー",
+            "frequency": "週1回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第三週"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢音楽愛好会",
+        "profileImage": "https://images.unsplash.com/photo-1551696785-927d4ac2d35b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "人文社会学域公認",
+        "memberComposition": {
+            "totalMembers": "35",
+            "gradeLevels": {
+                "1st": "20%",
+                "2nd": "30%",
+                "3rd": "25%",
+                "4th": "15%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "50%",
+                "Female": "50%"
+            },
+            "foundingYear": "2012"
+        },
+        "externalLinks": {
+            "Instagram": "@kanazawamusiclovers"
+        },
+        "tags": ["中途歓迎", "文化系", "公認", "兼サー可"],
+        "activityDetails": {
+            "summary": "音楽を愛するすべての人に開かれたコミュニティ。クラシックからポップスまで、幅広いジャンルを楽しもう！",
+            "location": "音楽学部、市内のコンサートホール",
+            "frequency": "週2回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第一週"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢デジタルアーツ",
+        "profileImage": "https://images.unsplash.com/photo-1637416067365-2b5e7e8fe8fa?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "理工学域公認",
+        "memberComposition": {
+            "totalMembers": "45",
+            "gradeLevels": {
+                "1st": "30%",
+                "2nd": "30%",
+                "3rd": "20%",
+                "4th": "10%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "60%",
+                "Female": "40%"
+            },
+            "foundingYear": "2016"
+        },
+        "externalLinks": {
+            "Website": "www.kanazawadigitalarts.com"
+        },
+        "tags": ["公認", "インカレ"],
+        "activityDetails": {
+            "summary": "最先端技術を駆使してアートを創出する。VRやARを活用し、未来のアートシーンをリードしよう。",
+            "location": "工学部、オンライン",
+            "frequency": "週3回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第二週"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢エコロジークラブ",
+        "profileImage": "https://images.unsplash.com/photo-1613858749733-3a3e456e3d9e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "全学公認",
+        "memberComposition": {
+            "totalMembers": "60",
+            "gradeLevels": {
+                "1st": "40%",
+                "2nd": "30%",
+                "3rd": "15%",
+                "4th": "10%",
+                "5th": "3%",
+                "6th": "2%"
+            },
+            "gender": {
+                "Male": "45%",
+                "Female": "55%"
+            },
+            "foundingYear": "2009"
+        },
+        "externalLinks": {
+            "Instagram": "@kanazawaecology"
+        },
+        "tags": ["ボランティア", "公認", "中途歓迎", "兼サー可"],
+        "activityDetails": {
+            "summary": "地球環境を守るための活動に参加しよう。リサイクル、クリーンアップ活動を通じて地域社会に貢献。",
+            "location": "市内各地、自然公園",
+            "frequency": "月2回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第三週"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢ボードゲームクラブ",
+        "profileImage": "https://images.unsplash.com/photo-1606503153255-59d8b8b82176?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "非公認",
+        "memberComposition": {
+            "totalMembers": "30",
+            "gradeLevels": {
+                "1st": "25%",
+                "2nd": "25%",
+                "3rd": "20%",
+                "4th": "20%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "55%",
+                "Female": "45%"
+            },
+            "foundingYear": "2018"
+        },
+        "externalLinks": {
+            "Instagram": "@kanazawaboardgames"
+        },
+        "tags": ["インカレ", "中途歓迎", "文化系"],
+        "activityDetails": {
+            "summary": "戦略と運を駆使して楽しむボードゲームの世界。新しい友達を作りながら楽しい時間を過ごそう。",
+            "location": "市内のカフェ",
+            "frequency": "週1回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "随時"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢国際交流サークル",
+        "profileImage": "https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "全学公認",
+        "memberComposition": {
+            "totalMembers": "75",
+            "gradeLevels": {
+                "1st": "30%",
+                "2nd": "25%",
+                "3rd": "20%",
+                "4th": "15%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "50%",
+                "Female": "50%"
+            },
+            "foundingYear": "2013"
+        },
+        "externalLinks": {
+            "Instagram": "@kanazawainternational"
+        },
+        "tags": ["公認", "中途歓迎"],
+        "activityDetails": {
+            "summary": "世界中の文化と友達を作る場所。言語交換、国際イベントを通じてグローバルな視点を育もう。",
+            "location": "大学内、市内の国際センター",
+            "frequency": "週2回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第一週"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢茶道クラブ",
+        "profileImage": "https://images.unsplash.com/photo-1532136868905-8094ef8ef5f2?q=80&w=1229&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "人文社会学域公認",
+        "memberComposition": {
+            "totalMembers": "20",
+            "gradeLevels": {
+                "1st": "30%",
+                "2nd": "25%",
+                "3rd": "25%",
+                "4th": "10%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "30%",
+                "Female": "70%"
+            },
+            "foundingYear": "2001"
+        },
+        "externalLinks": {
+            "Website": "www.kanazawateaceremony.com"
+        },
+        "tags": ["文化系", "公認"],
+        "activityDetails": {
+            "summary": "伝統的な日本の茶道を学び、心を豊かにする。一服の茶から始まる心の交流を体験しよう。",
+            "location": "文化センター、大学内特設道場",
+            "frequency": "月2回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第二週"
+        },
+        "lastUpdate": "2025年2月13日"
+    },
+    {
+        "circleName": "金沢映画サークル",
+        "profileImage": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "affiliation": "全学公認",
+        "memberComposition": {
+            "totalMembers": "50",
+            "gradeLevels": {
+                "1st": "20%",
+                "2nd": "30%",
+                "3rd": "25%",
+                "4th": "15%",
+                "5th": "5%",
+                "6th": "5%"
+            },
+            "gender": {
+                "Male": "40%",
+                "Female": "60%"
+            },
+            "foundingYear": "2005"
+        },
+        "externalLinks": {
+            "Instagram": "@kanazawafilmclub"
+        },
+        "tags": ["文化系", "公認", "中途歓迎"],
+        "activityDetails": {
+            "summary": "映画を通じて異なる文化や価値観を学び、議論を深める。月に一度、映画鑑賞会を開催。",
+            "location": "市内の映画館、大学の講義室",
+            "frequency": "月1回"
+        },
+        "recruitmentInfo": {
+            "welcomeSchedule": "4月第三週"
+        },
+        "lastUpdate": "2025年2月13日"
+    }
+]
