@@ -46,11 +46,11 @@ function Circle() {
     };
     function MemberComposition(composition: MemberProps) {
         return (<>
-            <Typography variant="body2">総勢{composition.totalMembers}名</Typography>
-            <Stack spacing={2}>
-                <Box>
-                    <Typography variant="body1">ジェンダー構成</Typography>
-                    <Table>
+            <ListItemText secondary={`総勢${composition.totalMembers}名`} />
+            <Stack spacing={2} mt={1}>
+                <Box maxWidth={400}>
+                    <ListItemText secondary="ジェンダー構成" />
+                    <Table sx={{width: 200}}>
                         <TableHead>
                             <TableRow>
                                 <TableCell>男性</TableCell>
@@ -65,9 +65,9 @@ function Circle() {
                         </TableBody>
                     </Table>
                 </Box>
-                <Box>
-                    <Typography variant="body1">学年構成</Typography>
-                    <Table>
+                <Box sx={{maxWidth: 300}}>
+                    <ListItemText secondary="学年構成" />
+                    <Table sx={{width: '100%'}}>
                         <TableHead>
                             <TableRow>
                                 <TableCell>1年</TableCell>
@@ -114,7 +114,7 @@ function Circle() {
                         ))}
                     </Swiper>
                     </Box>
-                    <Typography variant="h6" mt={1}>基本情報</Typography>
+                    <Typography variant="h6" mt={2}>基本情報</Typography>
                     <List>
                         <ListItem>
                             <ListItemText primary="結成年" secondary={item.memberComposition.foundingYear}/>
