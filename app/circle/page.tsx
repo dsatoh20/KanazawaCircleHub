@@ -7,6 +7,7 @@ import BasicBreadcrumbs from "../components/layout/Footer";
 import data from '../../data/data.json';
 import { redirect, useSearchParams } from 'next/navigation';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Suspense } from 'react';
 
 interface LinksProps {
     Instagram?: string;
@@ -45,7 +46,7 @@ export default function Circle() {
         )
     }
     function MemberComposition(composition: MemberProps) {
-        return (<>
+        return (<Suspense fallback={<div>Loading...</div>}>
             <Typography variant="body2">総勢{composition.totalMembers}名</Typography>
             <Stack spacing={2}>
                 <Box>
@@ -91,7 +92,7 @@ export default function Circle() {
                     </Table>
                 </Box>
             </Stack>
-        </>)
+        </Suspense>)
     }
 
     return (
