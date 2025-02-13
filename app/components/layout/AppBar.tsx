@@ -58,8 +58,8 @@ export default function MenuAppBar({title}: {title: string}) {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}><Link href="/about">金沢サークルハブとは？</Link></MenuItem>
                 <MenuItem onClick={handleClose}><Link href="/">サークル一覧</Link></MenuItem>
+                <MenuItem onClick={handleClose}><Link href="/about">金沢サークルハブとは？</Link></MenuItem>
                 <MenuItem onClick={handleClose}><Link href="/calender">新歓カレンダー</Link></MenuItem>
                 <MenuItem onClick={handleClose}><Link href="/manager">サークル運営者向け</Link></MenuItem>
                 <MenuItem onClick={handleClose}><a href='https://docs.google.com/forms/d/1XgikhuDE0JQoBhm0a7QN3_60IQzY9ZHGJ0H_3LxaLqQ'>お問い合わせ</a></MenuItem>
