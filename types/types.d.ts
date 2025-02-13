@@ -12,6 +12,9 @@ interface Circle {
             Male: string;
             Female: string;
         };
+        belonging: {
+            [key: string]: string;
+        };
         foundingYear: string;
     };
     externalLinks: {
@@ -25,6 +28,12 @@ interface Circle {
         summary: string;
         location: string;
         frequency: string;
+        meal: string;
+        record: string;
+        membershipFee: string;
+        initialCost: string;
+        feelingPositive: string;
+        feelingNegative: string;
     };
     recruitmentInfo: {
         welcomeSchedule: string;

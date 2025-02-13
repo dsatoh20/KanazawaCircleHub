@@ -24,6 +24,9 @@ interface MemberProps {
             Male: string;
             Female: string;
         };
+        belonging: {
+            [key: string]: string;
+        };
         foundingYear: string;
 };
 function Circle() {
@@ -65,7 +68,7 @@ function Circle() {
                         </TableBody>
                     </Table>
                 </Box>
-                <Box sx={{maxWidth: 300}}>
+                <Box sx={{maxWidth: 400}}>
                     <ListItemText secondary="学年構成" />
                     <Table sx={{width: '100%'}}>
                         <TableHead>
@@ -86,6 +89,25 @@ function Circle() {
                                 <TableCell>{composition.gradeLevels['4th']}</TableCell>
                                 <TableCell>{composition.gradeLevels['5th']}</TableCell>
                                 <TableCell>{composition.gradeLevels['6th']}</TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </Box>
+                <Box sx={{maxWidth: 400}}>
+                    <ListItemText secondary="所属学域構成"/>
+                    <Table>
+                        <TableHead>
+                            <TableRow>
+                                <TableCell>人間社会学域</TableCell>
+                                <TableCell>理工学域</TableCell>
+                                <TableCell>医薬保健学域</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell>{composition.belonging["人間社会学域"]}</TableCell>
+                                <TableCell>{composition.belonging["理工学域"]}</TableCell>
+                                <TableCell>{composition.belonging["医薬保健学域"]}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>
@@ -138,15 +160,39 @@ function Circle() {
                         <ListItem>
                             <ListItemText primary="活動頻度" secondary={item.activityDetails.frequency}/>
                         </ListItem>
+                        <ListItem>
+                            <ListItemText primary="部飯" secondary={item.activityDetails.meal} />
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="活動実績" secondary={item.activityDetails.record} />
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="部費" secondary={item.activityDetails.membershipFee} />
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="初期費用" secondary={item.activityDetails.initialCost} />
+                        </ListItem>
+                    </List>
+                    <Typography variant="h6" mt={1}>内部の声</Typography>
+                    <List>
+                        <ListItem>
+                            <ListItemText primary="◎魅力" secondary={item.activityDetails.feelingPositive} />
+                        </ListItem>
+                        <ListItem>
+                            <ListItemText primary="△ここはちょっと..." secondary={item.activityDetails.feelingNegative} />
+                        </ListItem>
                     </List>
                     <Typography variant="h6" mt={1}>新歓日程</Typography>
-                    <ListItem>
-                        <ListItemText primary="" secondary={item.recruitmentInfo.welcomeSchedule}/>
-                    </ListItem>
-                    <Typography variant="h6" mt={1}>連絡先</Typography>
-                    <ListItem>
-                        <ListItemText primary="" secondary={SocialLinks(item.externalLinks)}/>
-                    </ListItem>
+                    <List>
+                        <ListItem>
+                            <ListItemText primary="" secondary={item.recruitmentInfo.welcomeSchedule}/>
+                        </ListItem>
+                        <Typography variant="h6" mt={1}>連絡先</Typography>
+                        <ListItem>
+                            <ListItemText primary="" secondary={SocialLinks(item.externalLinks)}/>
+                        </ListItem>
+                    </List>
+                    
                 </Container>
                 </>}
             <BasicBreadcrumbs />

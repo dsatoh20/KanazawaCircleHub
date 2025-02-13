@@ -17,6 +17,11 @@
                 "Male": "40%",
                 "Female": "60%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "foundingYear": "2010"
         },
         "externalLinks": {
@@ -26,7 +31,13 @@
         "activityDetails": {
             "summary": "カメラを通じて世界を切り取る魔法。金沢の美しい風景やイベントを撮影し、あなたの視点で物語を語ろう！",
             "location": "芸術館、公園",
-            "frequency": "週2回"
+            "frequency": "週2回",
+            "meal": "部活後にあり(一年生は無料!)",
+            "record": "unsplashに参加",
+            "membershipFee": "2000円/年",
+            "initialCost": "2万円~(カメラ代として)",
+            "feelingPositive": "学業・恋愛との両立が容易いです。兼サーしているメンバーも多数在籍。",
+            "feelingNegative": "参加率が低く、実質の活動メンバーは2割ほど...。"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第一週"
@@ -47,6 +58,11 @@
                 "5th": "5%",
                 "6th": "5%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "gender": {
                 "Male": "50%",
                 "Female": "50%"
@@ -60,7 +76,13 @@
         "activityDetails": {
             "summary": "青春を駆け抜ける！フレンドリーなランニングクラブで健康も友情も手に入れよう。初心者からマラソンランナーまで大歓迎。",
             "location": "金沢市内の公園と運動場",
-            "frequency": "週3回"
+            "frequency": "週3回",
+            "meal": "部活後にあり(参加任意、一年生は無料!)",
+            "record": "2021~2024年 金沢城リレーマラソン出場、2023年 金沢マラソン出場(2名)",
+            "membershipFee": "2000円/年",
+            "initialCost": "0",
+            "feelingPositive": "大学から運動をはじめた学生も多数！先輩後輩、同期の仲がよく、すぐ集まりたがります！",
+            "feelingNegative": "特になし！"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第二週"
@@ -81,6 +103,11 @@
                 "5th": "5%",
                 "6th": "5%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "gender": {
                 "Male": "30%",
                 "Female": "70%"
@@ -94,7 +121,13 @@
         "activityDetails": {
             "summary": "アートで感じる、新しい視点。多彩なジャンルのアートを探求し、自分だけの作品を創造しよう。",
             "location": "美術学部、地域のギャラリー",
-            "frequency": "週1回"
+            "frequency": "週1回",
+            "meal": "任意参加",
+            "record": "2024年 学校教育学類卒業(2名)、2008~2024年 学内展示会",
+            "membershipFee": "6000円/年",
+            "initialCost": "0",
+            "feelingPositive": "趣味からプロ志望まで、幅広く在籍しています。",
+            "feelingNegative": "参加率が低く、実質の活動メンバーは2割ほど...。"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第三週"
@@ -115,6 +148,11 @@
                 "5th": "5%",
                 "6th": "5%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "gender": {
                 "Male": "50%",
                 "Female": "50%"
@@ -128,7 +166,13 @@
         "activityDetails": {
             "summary": "音楽を愛するすべての人に開かれたコミュニティ。クラシックからポップスまで、幅広いジャンルを楽しもう！",
             "location": "音楽学部、市内のコンサートホール",
-            "frequency": "週2回"
+            "frequency": "週2回",
+            "meal": "不定期",
+            "record": "2012~2024年 夏・冬コンサート, 2024年 北陸地域大学合同コンサート",
+            "membershipFee": "10000円/年(別途、楽器メンテナンス費・レッスン料必要)",
+            "initialCost": "楽器代(サークル貸し出しの場合は無料)",
+            "feelingPositive": "学業・恋愛との両立が容易いです。兼サーしているメンバーも多数在籍。",
+            "feelingNegative": "楽器代、レッスン代と、出費が大きいです。でもその分良い環境でしっかり音楽に打ち込めます！"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第一週"
@@ -149,6 +193,11 @@
                 "5th": "5%",
                 "6th": "5%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "gender": {
                 "Male": "60%",
                 "Female": "40%"
@@ -162,7 +211,13 @@
         "activityDetails": {
             "summary": "最先端技術を駆使してアートを創出する。VRやARを活用し、未来のアートシーンをリードしよう。",
             "location": "工学部、オンライン",
-            "frequency": "週3回"
+            "frequency": "週3回",
+            "meal": "なし",
+            "record": "月2回勉強会",
+            "membershipFee": "500円/年(共有サーバー運営用)",
+            "initialCost": "0",
+            "feelingPositive": "理工系の学生は学んだことを実装できる貴重なチャンス。文系、医学系の学生も先輩や同期のサポートでオリジナル作品を発表できます。",
+            "feelingNegative": "良いパソコンがあったほうがいいかも。"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第二週"
@@ -183,6 +238,11 @@
                 "5th": "3%",
                 "6th": "2%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "gender": {
                 "Male": "45%",
                 "Female": "55%"
@@ -196,7 +256,13 @@
         "activityDetails": {
             "summary": "地球環境を守るための活動に参加しよう。リサイクル、クリーンアップ活動を通じて地域社会に貢献。",
             "location": "市内各地、自然公園",
-            "frequency": "月2回"
+            "frequency": "月2回",
+            "meal": "なし",
+            "record": "千里浜再生プロジェクト協賛希望",
+            "membershipFee": "0",
+            "initialCost": "0",
+            "feelingPositive": "地域の方々と関わる機会が多く、活動もやりがい十分です！特に地域創造学類の学生が多く在籍していますが、その他様々な専門の学生で構成されており、広い交友関係を築けるのが魅力です！",
+            "feelingNegative": "参加率が低く、実質の活動メンバーは2割ほど...。"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第三週"
@@ -221,6 +287,11 @@
                 "Male": "55%",
                 "Female": "45%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "foundingYear": "2018"
         },
         "externalLinks": {
@@ -230,7 +301,13 @@
         "activityDetails": {
             "summary": "戦略と運を駆使して楽しむボードゲームの世界。新しい友達を作りながら楽しい時間を過ごそう。",
             "location": "市内のカフェ",
-            "frequency": "週1回"
+            "frequency": "週1回",
+            "meal": "不定期",
+            "record": "部内将棋大会、部内オセロ大会、金沢大学カタン最強王決定戦",
+            "membershipFee": "1000円/年",
+            "initialCost": "0",
+            "feelingPositive": "先輩後輩の仲がすこぶる良いです。",
+            "feelingNegative": "ゲームに課金しすぎて生活が危うい学生が多数...。サークルとしては救済できません。"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "随時"
@@ -255,6 +332,11 @@
                 "Male": "50%",
                 "Female": "50%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "foundingYear": "2013"
         },
         "externalLinks": {
@@ -264,7 +346,13 @@
         "activityDetails": {
             "summary": "世界中の文化と友達を作る場所。言語交換、国際イベントを通じてグローバルな視点を育もう。",
             "location": "大学内、市内の国際センター",
-            "frequency": "週2回"
+            "frequency": "週2回",
+            "meal": "不定期",
+            "record": "金沢大学カタン最強王決定戦2024優勝",
+            "membershipFee": "5000円/年",
+            "initialCost": "0",
+            "feelingPositive": "学業・恋愛との両立が容易いです。兼サーしているメンバーも多数在籍。",
+            "feelingNegative": "自発的に英語を話す意識を持たないと、なかなか輪に入れないかも。"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第一週"
@@ -289,6 +377,11 @@
                 "Male": "30%",
                 "Female": "70%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "foundingYear": "2001"
         },
         "externalLinks": {
@@ -298,7 +391,13 @@
         "activityDetails": {
             "summary": "伝統的な日本の茶道を学び、心を豊かにする。一服の茶から始まる心の交流を体験しよう。",
             "location": "文化センター、大学内特設道場",
-            "frequency": "月2回"
+            "frequency": "月2回",
+            "meal": "なし",
+            "record": "2024年 茶話会開催2回",
+            "membershipFee": "20000円/年",
+            "initialCost": "0",
+            "feelingPositive": "先生のお稽古はここでしか受けられない！紳士淑女の養成所との呼び声が高いです。",
+            "feelingNegative": "はじめは正座がキツイ...でも大丈夫、慣れます！"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第二週"
@@ -323,6 +422,11 @@
                 "Male": "40%",
                 "Female": "60%"
             },
+            "belonging": {
+                "人間社会学域": "50%",
+                "理工学域": "40%",
+                "医薬保健学域": "10%"
+            },
             "foundingYear": "2005"
         },
         "externalLinks": {
@@ -332,7 +436,13 @@
         "activityDetails": {
             "summary": "映画を通じて異なる文化や価値観を学び、議論を深める。月に一度、映画鑑賞会を開催。",
             "location": "市内の映画館、大学の講義室",
-            "frequency": "月1回"
+            "frequency": "月1回",
+            "meal": "不定期",
+            "record": "2024年 Filmarks投稿2件",
+            "membershipFee": "500円/年(別途、映画館のチケット代必要)",
+            "initialCost": "0",
+            "feelingPositive": "観た映画について感想を言い合うことで、言語化力が高まります！",
+            "feelingNegative": "参加率が低く、実質の活動メンバーは2割ほど...。"
         },
         "recruitmentInfo": {
             "welcomeSchedule": "4月第三週"
