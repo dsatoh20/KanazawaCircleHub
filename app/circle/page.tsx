@@ -68,7 +68,7 @@ function Circle() {
                         </TableBody>
                     </Table>
                 </Box>
-                <Box sx={{maxWidth: 400}}>
+                <Box sx={{maxWidth: "90%"}}>
                     <ListItemText secondary="学年構成" />
                     <Table sx={{width: '100%'}}>
                         <TableHead>
@@ -93,7 +93,7 @@ function Circle() {
                         </TableBody>
                     </Table>
                 </Box>
-                <Box sx={{maxWidth: 400}}>
+                <Box sx={{maxWidth: "90%"}}>
                     <ListItemText secondary="所属学域構成"/>
                     <Table>
                         <TableHead>
