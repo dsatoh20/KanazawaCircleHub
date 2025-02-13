@@ -7,8 +7,8 @@ import { Box } from '@mui/material';
 
 export default function BasicBreadcrumbs() {
   return (
-    <Box sx={{bgcolor: "primary.dark", p:3}}>
-      <Breadcrumbs aria-label="breadcrumb" sx={{color: "primary.light"}}>
+    <Box sx={{bgcolor: "primary.dark", p:3, justifyContent: 'center'}}>
+      <Breadcrumbs aria-label="breadcrumb" sx={{color: "primary.light", display: "flex", justifyContent: 'center'}}>
         <Link 
             underline="hover" 
             color='primary.light'
@@ -18,9 +18,9 @@ export default function BasicBreadcrumbs() {
         <Link
           underline="hover"
           color='primary.light'
-          href="/manager"
+          href="/calender"
         >
-          運営者向け
+          カレンダー
         </Link>
         <Link 
             underline='hover'
