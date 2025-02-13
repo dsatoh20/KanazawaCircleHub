@@ -12,7 +12,7 @@ export default function About() {
             <Container maxWidth="sm" sx={{ marginTop: 2, marginBottom: 2 }}>
                 <Grid container spacing={2}>
                     <Grid size={12}><Box><Image src="/demo.svg" alt="demo" width={500} height={500}/></Box></Grid>
-                    <Grid size={12}><Box><Typography variant="h5" sx={{textAlign: "center"}}>金沢・北陸の学生と<br/>コミュニティをつなぐ<br/>"HUB"となる</Typography></Box></Grid>
+                    <Grid size={12}><Box><Typography variant="h5" sx={{textAlign: "center"}}>金沢・北陸の学生と<br/>コミュニティをつなぐ<br/>&quot;HUB&quot;となる</Typography></Box></Grid>
                 </Grid>
             </Container>
             <BasicBreadcrumbs />
