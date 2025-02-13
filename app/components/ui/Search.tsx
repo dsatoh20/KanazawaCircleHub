@@ -26,7 +26,7 @@ export default function SearchBox({items}: SearchBoxProps) {
             renderInput={(params) => (
             <TextField
                 {...params}
-                label="サークルを探す"
+                label="サークルをさがす"
                 slotProps={{
                 input: {
                     ...params.InputProps,
