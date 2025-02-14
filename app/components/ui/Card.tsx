@@ -43,12 +43,12 @@ export default function ImgMediaCard({item}: ImgMediaCardProps) {
         <CardActions>
             <Swiper
                 spaceBetween={1}
-                slidesPerView={2}
+                slidesPerView={'auto'}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 >
                 {item.tags.map((tag:string, index:number) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} style={{width: 'auto'}}>
                         <Chip size="small" label={tag} sx={{bgcolor: 'primary.light', width:'100%'}}/>
                     </SwiperSlide>
                 ))}

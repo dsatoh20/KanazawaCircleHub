@@ -123,21 +123,19 @@ function Circle() {
                     <Box>
                     <Swiper
                         spaceBetween={1}
-                        slidesPerView={4}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
+                        slidesPerView={"auto"}
                         >
                         {item.tags.map((tag:string, index:number) => (
-                            <SwiperSlide key={index}>
-                                <Chip size="small" label={tag} sx={{bgcolor: 'primary.light', width:'100%'}}/>
+                            <SwiperSlide key={index} style={{width: 'auto'}}>
+                                <Chip size="small" label={tag} sx={{bgcolor: 'primary.light'}}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>
                     </Box>
                     <Typography variant="h6" mt={1}>連絡先</Typography>
-                    <ListItem>
-                        <ListItemText primary="" secondary={SocialLinks(item.externalLinks)}/>
-                    </ListItem>
+                    <SocialLinks />
                     <Accordion>
                         <AccordionSummary
                             expandIcon={<ArrowDropDownIcon />}
