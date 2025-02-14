@@ -8,6 +8,8 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import MenuAppBar from "./components/layout/AppBar";
+import BasicBreadcrumbs from "./components/layout/Footer";
 
 
 const geistSans = Geist({
@@ -35,7 +37,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider theme={theme}><main>{children}</main></ThemeProvider>
+        
+          <main>
+            <ThemeProvider theme={theme}>
+              <MenuAppBar />
+              {children}
+              <BasicBreadcrumbs />
+            </ThemeProvider>
+          </main>
+        
         
       </body>
       

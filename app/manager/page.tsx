@@ -1,15 +1,11 @@
 import React from 'react';
-import RootLayout from '../layout';
-import MenuAppBar from '../components/layout/AppBar';
 import { List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Container } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
-import BasicBreadcrumbs from '../components/layout/Footer';
 
 
 export default function Manager() {
   return (
-    <RootLayout>
-      <MenuAppBar title='サークル運営者向け'/>
+    <>
       <Container maxWidth="sm" sx={{ marginTop: 2, marginBottom: 2 }}>
         <List
           sx={{ width: '100%' }}
@@ -21,6 +17,12 @@ export default function Manager() {
             </ListSubheader>
           }
         >
+          <ListItemButton component='a' href='https://circlehubinfo.netlify.app/'>
+            <ListItemIcon>
+              <SendIcon />
+            </ListItemIcon>
+            <ListItemText primary="サークル運営者向けサイト" />
+          </ListItemButton>
           <ListItemButton component='a' href='https://docs.google.com/forms/d/e/1FAIpQLSe5H195VpuxzRZDslOrlkwgyY9glLlZVlcOtgLA4mAt_H5Zhw/viewform?usp=dialog'>
             <ListItemIcon>
               <SendIcon />
@@ -35,7 +37,6 @@ export default function Manager() {
           </ListItemButton>
         </List>
       </Container>      
-      <BasicBreadcrumbs />
-    </RootLayout>
+    </>
   );
 }

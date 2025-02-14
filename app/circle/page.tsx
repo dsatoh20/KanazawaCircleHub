@@ -1,9 +1,6 @@
 'use client';
 
 import { Typography, Container, Chip, Box, List, ListItem, ListItemText, Table, TableHead, TableRow, TableCell, TableBody, Stack } from "@mui/material";
-import RootLayout from "../layout";
-import MenuAppBar from "../components/layout/AppBar";
-import BasicBreadcrumbs from "../components/layout/Footer";
 import data from '../../data/data.json';
 import { redirect, useSearchParams } from 'next/navigation';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -117,9 +114,9 @@ function Circle() {
     };
 
     return (
-        <RootLayout>
+        <>
                 {item && <>
-                <MenuAppBar title={item.circleName} />
+                <Typography variant="h5" m={2} sx={{display:"flex", justifyContent: "center"}}>{item.circleName}</Typography>
                 <Container maxWidth="sm" sx={{ marginTop: 2, marginBottom: 2 }}>
                     <Typography variant="body2" mb={2} sx={{display: "flex",justifyContent: "flex-end"}}>最終更新: {item.lastUpdate}</Typography>
                     <Box>
@@ -195,8 +192,7 @@ function Circle() {
                     
                 </Container>
                 </>}
-            <BasicBreadcrumbs />
-        </RootLayout>
+        </>
     );
 };
 

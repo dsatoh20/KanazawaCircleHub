@@ -1,11 +1,8 @@
 'use client';
 
 import { Container, Typography, Box } from "@mui/material";
-import RootLayout from "./layout";
-import MenuAppBar from "./components/layout/AppBar";
 import SwiperComponent from "./components/ui/Swiper";
 import data from '../data/data.json';
-import BasicBreadcrumbs from "./components/layout/Footer";
 import SearchBox from "./components/ui/Search";
 
 const tags = ['公認', '文化系', '体育会系', '兼サー可', '中途歓迎', 'インカレ', 'ボランティア'];
@@ -13,8 +10,7 @@ const tags = ['公認', '文化系', '体育会系', '兼サー可', '中途歓�
 export default function Home() {
   const items:Circle[] = data;
   return (
-    <RootLayout>
-      <MenuAppBar title="金沢サークルハブ"/>
+    <>
       <Container maxWidth="sm" sx={{ marginTop: 2, marginBottom: 2 }}>
         <SearchBox items={items}/>
       </Container>
@@ -26,7 +22,6 @@ export default function Home() {
           </Box>
         ))}
       </Container>
-      <BasicBreadcrumbs />
-    </RootLayout>
+    </>
     );
 }

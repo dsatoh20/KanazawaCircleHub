@@ -12,7 +12,7 @@ import Menu from '@mui/material/Menu';
 import Link from 'next/link';
 
 
-export default function MenuAppBar({title}: {title: string}) {
+export default function MenuAppBar() {
   
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
@@ -39,9 +39,11 @@ export default function MenuAppBar({title}: {title: string}) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            {title}
-          </Typography>
+          <Link href="/">
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              金沢サークルハブ
+            </Typography>
+          </Link>
             <div>
               <Menu
                 id="menu-appbar"
