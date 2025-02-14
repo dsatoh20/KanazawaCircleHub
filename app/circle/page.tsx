@@ -1,10 +1,11 @@
 'use client';
 
-import { Typography, Container, Chip, Box, List, ListItem, ListItemText, Table, TableHead, TableRow, TableCell, TableBody, Stack } from "@mui/material";
+import { Typography, Container, Chip, Box, List, ListItem, ListItemText, Table, TableHead, TableRow, TableCell, TableBody, Stack, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import data from '../../data/data.json';
 import { redirect, useSearchParams } from 'next/navigation';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Suspense } from 'react';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 interface LinksProps {
     Instagram?: string;
@@ -133,62 +134,81 @@ function Circle() {
                         ))}
                     </Swiper>
                     </Box>
-                    <Typography variant="h6" mt={2}>基本情報</Typography>
-                    <List>
-                        <ListItem>
-                            <ListItemText primary="結成年" secondary={item.memberComposition.foundingYear}/>
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="所属" secondary={item.affiliation}/>
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="メンバー構成" secondary={MemberComposition(item.memberComposition)}/>
-                        </ListItem>
-                        
-                    </List>
-                    <Typography variant="h6" mt={1}>活動内容</Typography>
-                    <List>
-                        <ListItem>
-                            <ListItemText primary="概要" secondary={item.activityDetails.summary}/>
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="活動場所" secondary={item.activityDetails.location}/>
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="活動頻度" secondary={item.activityDetails.frequency}/>
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="部飯" secondary={item.activityDetails.meal} />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="活動実績" secondary={item.activityDetails.record} />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="部費" secondary={item.activityDetails.membershipFee} />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="初期費用" secondary={item.activityDetails.initialCost} />
-                        </ListItem>
-                    </List>
-                    <Typography variant="h6" mt={1}>内部の声</Typography>
-                    <List>
-                        <ListItem>
-                            <ListItemText primary="◎魅力" secondary={item.activityDetails.feelingPositive} />
-                        </ListItem>
-                        <ListItem>
-                            <ListItemText primary="△ここはちょっと..." secondary={item.activityDetails.feelingNegative} />
-                        </ListItem>
-                    </List>
-                    <Typography variant="h6" mt={1}>新歓日程</Typography>
-                    <List>
-                        <ListItem>
-                            <ListItemText primary="" secondary={item.recruitmentInfo.welcomeSchedule}/>
-                        </ListItem>
-                        <Typography variant="h6" mt={1}>連絡先</Typography>
-                        <ListItem>
-                            <ListItemText primary="" secondary={SocialLinks(item.externalLinks)}/>
-                        </ListItem>
-                    </List>
+                    <Typography variant="h6" mt={1}>連絡先</Typography>
+                    <ListItem>
+                        <ListItemText primary="" secondary={SocialLinks(item.externalLinks)}/>
+                    </ListItem>
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ArrowDropDownIcon />}
+                        ><Typography component="span">基本情報</Typography></AccordionSummary>
+                        <AccordionDetails>
+                            <List>
+                                <ListItem>
+                                    <ListItemText primary="結成年" secondary={item.memberComposition.foundingYear}/>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="所属" secondary={item.affiliation}/>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="メンバー構成" secondary={MemberComposition(item.memberComposition)}/>
+                                </ListItem>
+                                
+                            </List>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion>
+                        <AccordionSummary expandIcon={<ArrowDropDownIcon />}><Typography component="span">活動内容</Typography></AccordionSummary>
+                        <AccordionDetails>
+                            <List>
+                                <ListItem>
+                                    <ListItemText primary="概要" secondary={item.activityDetails.summary}/>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="活動場所" secondary={item.activityDetails.location}/>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="活動頻度" secondary={item.activityDetails.frequency}/>
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="部飯" secondary={item.activityDetails.meal} />
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="活動実績" secondary={item.activityDetails.record} />
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="部費" secondary={item.activityDetails.membershipFee} />
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="初期費用" secondary={item.activityDetails.initialCost} />
+                                </ListItem>
+                            </List>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion>
+                        <AccordionSummary expandIcon={<ArrowDropDownIcon />}><Typography component='span'>内部の声</Typography></AccordionSummary>
+                        <AccordionDetails>
+                            <List>
+                                <ListItem>
+                                    <ListItemText primary="◎魅力" secondary={item.activityDetails.feelingPositive} />
+                                </ListItem>
+                                <ListItem>
+                                    <ListItemText primary="△ここはちょっと..." secondary={item.activityDetails.feelingNegative} />
+                                </ListItem>
+                            </List>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion>
+                        <AccordionSummary expandIcon={<ArrowDropDownIcon />}><Typography component='span'>新歓スケジュール</Typography></AccordionSummary>
+                        <AccordionDetails>
+                            <List>
+                                <ListItem>
+                                    <ListItemText primary="" secondary={item.recruitmentInfo.welcomeSchedule}/>
+                                </ListItem>
+                            </List>
+                        </AccordionDetails>
+                    </Accordion>
+                    
                     
                 </Container>
                 </>}
