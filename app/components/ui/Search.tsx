@@ -1,6 +1,6 @@
-import { Circle } from "@mui/icons-material";
-import { Autocomplete, TextField, Container, Link, Typography } from "@mui/material";
+import { Autocomplete, TextField, Container, Link, Typography, InputAdornment } from "@mui/material";
 import { useState } from "react";
+import SearchIcon from '@mui/icons-material/Search';
 
 interface SearchBoxProps {
     items: Circle[];
@@ -31,6 +31,11 @@ export default function SearchBox({items}: SearchBoxProps) {
                 input: {
                     ...params.InputProps,
                     type: 'search',
+                    startAdornment: (
+                        <InputAdornment position="start">
+                            <SearchIcon />
+                        </InputAdornment>
+                    )
                 },
                 }}
             />

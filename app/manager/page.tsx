@@ -1,6 +1,7 @@
 import React from 'react';
 import { List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Container } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
+import WebAssetIcon from '@mui/icons-material/WebAsset';
 
 
 export default function Manager() {
@@ -19,15 +20,9 @@ export default function Manager() {
         >
           <ListItemButton component='a' href='https://circlehubinfo.netlify.app/'>
             <ListItemIcon>
-              <SendIcon />
+              <WebAssetIcon />
             </ListItemIcon>
             <ListItemText primary="サークル運営者向けサイト" />
-          </ListItemButton>
-          <ListItemButton component='a' href='https://docs.google.com/forms/d/e/1FAIpQLSe5H195VpuxzRZDslOrlkwgyY9glLlZVlcOtgLA4mAt_H5Zhw/viewform?usp=dialog'>
-            <ListItemIcon>
-              <SendIcon />
-            </ListItemIcon>
-            <ListItemText primary="新規掲載依頼フォーム" />
           </ListItemButton>
           <ListItemButton component='a' href='https://docs.google.com/forms/d/e/1FAIpQLSfKS6W8k96MnR8cCdYF1ZX0PmcJdhw7ahlIIZgOo2NCGeIPWw/viewform?usp=dialog'>
             <ListItemIcon>
