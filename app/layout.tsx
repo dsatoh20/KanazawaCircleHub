@@ -38,6 +38,7 @@ export default function RootLayout({
         <meta name="description" content="金沢・北陸の学生向け、サークル情報まとめサイトです。"/>
         <link rel="icon" href="favicon.ico" />
         <link rel="apple-touch-icon-precomposed" href="/logo.svg" />
+        <meta name="google-site-verification" content="ke2N6RueK9rn_X03e6mBlKuleS4rACdtuLYy_HN1KuQ" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
