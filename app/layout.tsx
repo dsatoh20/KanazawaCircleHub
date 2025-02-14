@@ -32,7 +32,12 @@ export default function RootLayout({
     
     <html lang="ja">
       <head>
-        
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <title>金沢サークルハブ</title>
+        <meta name="description" content="金沢・北陸の学生向け、サークル情報まとめサイトです。"/>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" href="/logo.svg" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

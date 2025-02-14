@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 export default function MenuAppBar() {
@@ -34,15 +35,19 @@ export default function MenuAppBar() {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{ mr: 1 }}
             onClick={handleMenu}
           >
             <MenuIcon />
           </IconButton>
           <Link href="/">
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              金沢サークルハブ
-            </Typography>
+            <Box sx={{display: 'flex', textAlign: 'center'}}>
+              <Image src='/logo.svg' alt='logo' width={30} height={30} />
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1, paddingLeft: 1 }}>
+                金沢サークルハブ
+              </Typography>
+            </Box>
+            
           </Link>
             <div>
               <Menu
