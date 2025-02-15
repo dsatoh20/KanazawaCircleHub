@@ -22,6 +22,9 @@ interface Circle {
         LINE?: string;
         X?: string;
         Website?: string;
+        Facebook?: string;
+        YouTube?: string;
+        weighted?: string;
     };
     tags: string[];
     activityDetails: {

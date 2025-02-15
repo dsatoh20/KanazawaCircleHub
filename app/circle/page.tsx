@@ -1,12 +1,13 @@
 'use client';
 
-import { Typography, Container, Chip, Box, List, ListItem, ListItemText, Table, TableHead, TableRow, TableCell, TableBody, Stack, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import { Typography, Container, Chip, Box, List, ListItem, ListItemText, Table, TableHead, TableRow, TableCell, TableBody, Stack, Accordion, AccordionSummary, AccordionDetails, Fab } from "@mui/material";
 import data from '../../data/data.json';
 import { redirect, useSearchParams } from 'next/navigation';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Suspense } from 'react';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SnsBar from "../components/ui/SnsBar";
+import LaunchIcon from '@mui/icons-material/Launch';
 
 
 interface MemberProps {
@@ -118,6 +119,7 @@ function Circle() {
                         ))}
                     </Swiper>
                     </Box>
+                    <Typography component='h6' mt={2}>外部リンク一覧</Typography>
                     <SnsBar links={item.externalLinks}/>
                     <Accordion>
                         <AccordionSummary
@@ -189,9 +191,8 @@ function Circle() {
                             </List>
                         </AccordionDetails>
                     </Accordion>
-                    
-                    
                 </Container>
+                <Fab href={item.externalLinks.weighted} variant="extended" color="secondary" style={{position: "fixed", bottom: '72px', right: 5, margin: 5}}><LaunchIcon sx={{mr:1}}/>{item.circleName}公式サイトへ</Fab>
                 </>}
         </>
     );

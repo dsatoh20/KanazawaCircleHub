@@ -19,7 +19,7 @@ interface LinksProps {
 export default function SnsBar({links}: {links: LinksProps}) {
     return (
         <>
-        <Grid container spacing={0} direction="row" width={"100%"} sx={{mt: 2, mb: 2}}>
+        <Grid container spacing={0} direction="row" width={"100%"} sx={{mb: 2}}>
             {links.Instagram && <Grid><IconButton href={links.Instagram} style={{color: '#e1306c'}} ><InstagramIcon/></IconButton></Grid>}
             {links.X && <Grid><IconButton href={links.X} ><XIcon/></IconButton></Grid>}
             {links.Facebook && <Grid><IconButton href={links.Facebook} style={{color: '#1877F2'}}><FacebookIcon/></IconButton></Grid>}
