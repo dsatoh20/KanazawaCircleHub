@@ -6,13 +6,9 @@ import { redirect, useSearchParams } from 'next/navigation';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Suspense } from 'react';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import SnsBar from "../components/ui/SnsBar";
 
-interface LinksProps {
-    Instagram?: string;
-    LINE?: string;
-    X?: string;
-    Website?: string;
-};
+
 interface MemberProps {
     totalMembers: string;
         gradeLevels: {
@@ -32,18 +28,6 @@ function Circle() {
     const item:Circle | undefined = data.find(item => item.circleName == searchParams.get("circleName"));
     if (!item) {
         return redirect('/');
-    };
-
-
-    function SocialLinks(links: LinksProps) {
-        return (
-        <ul>
-            <li>Instagram: {links.Instagram}</li>
-            <li>X: {links.X}</li>
-            <li>LINE: {links.LINE}</li>
-            <li>Website: {links.Website}</li>
-        </ul>
-        )
     };
     function MemberComposition(composition: MemberProps) {
         return (<>
@@ -134,8 +118,7 @@ function Circle() {
                         ))}
                     </Swiper>
                     </Box>
-                    <Typography variant="h6" mt={1}>連絡先</Typography>
-                    <SocialLinks />
+                    <SnsBar links={item.externalLinks}/>
                     <Accordion>
                         <AccordionSummary
                             expandIcon={<ArrowDropDownIcon />}
