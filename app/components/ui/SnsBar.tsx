@@ -20,12 +20,12 @@ export default function SnsBar({links}: {links: LinksProps}) {
     return (
         <>
         <Grid container spacing={0} direction="row" width={"100%"} sx={{mb: 2}}>
-            {links.Instagram && <Grid><IconButton href={links.Instagram} style={{color: '#e1306c'}} ><InstagramIcon/></IconButton></Grid>}
-            {links.X && <Grid><IconButton href={links.X} ><XIcon/></IconButton></Grid>}
-            {links.Facebook && <Grid><IconButton href={links.Facebook} style={{color: '#1877F2'}}><FacebookIcon/></IconButton></Grid>}
-            {links.LINE && <Grid><IconButton href={links.LINE}><Image src="/LINE_Brand_icon.png" alt='LINElogo' width={24} height={24}/></IconButton></Grid>}
-            {links.YouTube && <Grid><IconButton href={links.YouTube} style={{color:'#ff0000'}}><YouTubeIcon/></IconButton></Grid>}
-            {links.Website && <Grid><IconButton href={links.Website} style={{color: '#231f20'}}><WebIcon/></IconButton></Grid>}
+            {links.Instagram && <Grid><IconButton style={{color: '#e1306c'}} ><a href={links.Instagram} target="_blank" rel="noopener noreferrer"><InstagramIcon/></a></IconButton></Grid>}
+            {links.X && <Grid><IconButton ><a href={links.X} target="_blank" rel="noopener noreferrer"><XIcon/></a></IconButton></Grid>}
+            {links.Facebook && <Grid><IconButton style={{color: '#1877F2'}}><a href={links.Facebook} target="_blank" rel="noopener noreferrer"><FacebookIcon/></a></IconButton></Grid>}
+            {links.LINE && <Grid><IconButton><a href={links.LINE} target="_blank" rel="noopener noreferrer"><Image src="/LINE_Brand_icon.png" alt='LINElogo' width={24} height={24}/></a></IconButton></Grid>}
+            {links.YouTube && <Grid><IconButton style={{color:'#ff0000'}}><a href={links.YouTube} target="_blank" rel="noopener noreferrer"><YouTubeIcon/></a></IconButton></Grid>}
+            {links.Website && <Grid><IconButton style={{color: '#231f20'}}><a href={links.Website} target="_blank" rel="noopener noreferrer"><WebIcon/></a></IconButton></Grid>}
         </Grid>
         </>
     )

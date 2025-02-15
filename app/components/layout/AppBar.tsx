@@ -69,7 +69,7 @@ export default function MenuAppBar() {
                 <MenuItem onClick={handleClose}><Link href="/about">金沢サークルハブとは？</Link></MenuItem>
                 <MenuItem onClick={handleClose}><Link href="/calender">新歓カレンダー</Link></MenuItem>
                 <MenuItem onClick={handleClose}><Link href="/manager">サークル運営者向け</Link></MenuItem>
-                <MenuItem onClick={handleClose}><a href='https://docs.google.com/forms/d/1XgikhuDE0JQoBhm0a7QN3_60IQzY9ZHGJ0H_3LxaLqQ'>お問い合わせ</a></MenuItem>
+                <MenuItem onClick={handleClose}><a href='https://docs.google.com/forms/d/1XgikhuDE0JQoBhm0a7QN3_60IQzY9ZHGJ0H_3LxaLqQ' target='_blank' rel='noopener noreferrer'>お問い合わせ</a></MenuItem>
               </Menu>
             </div>
         </Toolbar>

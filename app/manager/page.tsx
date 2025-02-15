@@ -2,6 +2,7 @@ import React from 'react';
 import { List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Container } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import WebAssetIcon from '@mui/icons-material/WebAsset';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 
 export default function Manager() {
@@ -14,17 +15,17 @@ export default function Manager() {
           aria-labelledby="nested-list-subheader"
           subheader={
             <ListSubheader component="div" id="nested-list-subheader" sx={{bgcolor: 'primary.light'}}>
-              外部リンク
+              <LaunchIcon sx={{mr:1}}/>外部リンク
             </ListSubheader>
           }
         >
-          <ListItemButton component='a' href='https://circlehubinfo.netlify.app/'>
+          <ListItemButton component='a' href='https://circlehubinfo.netlify.app/' target='_blank' rel='noopener noreferrer'>
             <ListItemIcon>
               <WebAssetIcon />
             </ListItemIcon>
             <ListItemText primary="サークル運営者向けサイト" />
           </ListItemButton>
-          <ListItemButton component='a' href='https://docs.google.com/forms/d/e/1FAIpQLSfKS6W8k96MnR8cCdYF1ZX0PmcJdhw7ahlIIZgOo2NCGeIPWw/viewform?usp=dialog'>
+          <ListItemButton component='a' href='https://docs.google.com/forms/d/e/1FAIpQLSfKS6W8k96MnR8cCdYF1ZX0PmcJdhw7ahlIIZgOo2NCGeIPWw/viewform?usp=dialog' target='_blank' rel='noopener noreferrer'>
             <ListItemIcon>
               <SendIcon />
             </ListItemIcon>
