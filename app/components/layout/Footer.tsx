@@ -3,7 +3,7 @@
 import * as React from 'react';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 export default function BasicBreadcrumbs() {
   return (
@@ -28,6 +28,7 @@ export default function BasicBreadcrumbs() {
             href='/'
             >トップへ戻る</Link>
       </Breadcrumbs>
+      <Typography component='span' color='primary.light' sx={{fontSize: 14, width:'100%', display: 'block', textAlign: 'center', mt:1}}>&copy; 2025 Kanazawa Circle Hub</Typography>
     </Box>
   );
 }

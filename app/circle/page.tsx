@@ -192,7 +192,7 @@ function Circle() {
                         </AccordionDetails>
                     </Accordion>
                 </Container>
-                <Fab variant="extended" color="secondary" style={{position: "fixed", bottom: '72px', right: 5, margin: 5}}><a href={item.externalLinks.weighted} target="_blank" rel="noopener noreferrer"><LaunchIcon sx={{mr:1}}/>{item.circleName}公式サイトへ</a></Fab>
+                <Fab variant="extended" color="secondary" style={{position: "fixed", bottom: '101px', right: 5, margin: 5}}><a href={item.externalLinks.weighted} target="_blank" rel="noopener noreferrer"><LaunchIcon sx={{mr:1}}/>{item.circleName}公式サイトへ</a></Fab>
                 </>}
         </>
     );
