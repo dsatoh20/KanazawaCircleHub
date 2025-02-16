@@ -7,7 +7,7 @@ import { Box } from '@mui/material';
 
 export default function BasicBreadcrumbs() {
   return (
-    <Box sx={{bgcolor: "primary.dark", p:3, justifyContent: 'center'}}>
+    <Box sx={{bgcolor: "primary.dark", p:3, justifyContent: 'center', position: 'sticky', top: '100vh'}}>
       <Breadcrumbs aria-label="breadcrumb" sx={{color: "primary.light", display: "flex", justifyContent: 'center'}}>
         <Link 
             underline="hover" 
